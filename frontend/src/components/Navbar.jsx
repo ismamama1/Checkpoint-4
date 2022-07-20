@@ -13,7 +13,7 @@ function Navbar() {
         <Link to="/login">
           <button
             type="button"
-            className="text-black font-bold hover:text-lightblack active:lightblack"
+            className="text-black font-body font-semibold hover:text-lightblack active:lightblack"
           >
             Login
           </button>
