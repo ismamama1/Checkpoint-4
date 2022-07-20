@@ -6,15 +6,19 @@ import Page2 from "@pages/Page2";
 import Page3 from "@pages/Page3";
 
 import "./App.css";
+import Navbar from "@components/Navbar";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/page1" element={<Page1 />} />
-      <Route path="/page2" element={<Page2 />} />
-      <Route path="/page3" element={<Page3 />} />
-    </Routes>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/page1" element={<Page1 />} />
+        <Route path="/page2" element={<Page2 />} />
+        <Route path="/page3" element={<Page3 />} />
+      </Routes>
+    </>
   );
 }
 
