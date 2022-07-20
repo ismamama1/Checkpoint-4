@@ -5,7 +5,7 @@ import Button from "./Button";
 
 function Navbar() {
   return (
-    <div className="flex flex-row justify-between bg-beige h-[4.5rem] md:h-[6rem] mb-3 p-3 px-5 md:px-[2.8rem] lg:px-[8rem] xl:px-[13rem]">
+    <div className="flex flex-row justify-between bg-beige h-[4.5rem] md:h-[6rem] p-3 px-5 md:px-[2.8rem] lg:px-[8rem] xl:px-[13rem]">
       <Link to="/">
         <img src="" alt="logo" className="h-full" />
       </Link>
