@@ -10,12 +10,14 @@ function Navbar() {
         <img src="" alt="logo" className="h-full" />
       </Link>
       <div className="flex justify-between gap-x-10 items-center">
-        <button
-          type="button"
-          className="text-black font-bold hover:text-lightblack active:lightblack"
-        >
-          Login
-        </button>
+        <Link to="/login">
+          <button
+            type="button"
+            className="text-black font-bold hover:text-lightblack active:lightblack"
+          >
+            Login
+          </button>
+        </Link>
         <Button content="Register" link="/register" />
       </div>
     </div>
