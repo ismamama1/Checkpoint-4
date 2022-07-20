@@ -16,7 +16,7 @@ function Navbar() {
         >
           Login
         </button>
-        <Button content="Register" link="/Page1" />
+        <Button content="Register" link="/register" />
       </div>
     </div>
   );
