@@ -9,7 +9,7 @@ module.exports = {
       beige: "#EDE0D4",
       grey: "#9A96B0",
       green: "#84F877",
-      lightgreen: "#96F98B",
+      lightgreen: "#A7FA9E",
     },
     fontFamily: {
       heading: ["Libre Baskerville", "serif"],
