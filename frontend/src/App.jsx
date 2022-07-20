@@ -2,9 +2,9 @@ import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import Home from "@pages/Home";
-import Page1 from "@pages/Page1";
-import Page2 from "@pages/Register";
-import Page3 from "@pages/Login";
+import List from "@pages/List";
+import Register from "@pages/Register";
+import Login from "@pages/Login";
 import Navbar from "@components/Navbar";
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/page1" element={<Page1 />} />
-        <Route path="/register" element={<Page2 />} />
-        <Route path="/login" element={<Page3 />} />
+        <Route path="/list" element={<List />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );

@@ -17,7 +17,7 @@ function Home() {
         </h2>
 
         <div className="flex justify-center mb-9 md:mb-20">
-          <Button content="Discover" link="" />
+          <Button content="Discover" link="/list" />
         </div>
       </section>
     </div>
