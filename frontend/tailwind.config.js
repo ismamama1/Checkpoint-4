@@ -5,9 +5,11 @@ module.exports = {
     extend: {},
     colors: {
       black: "#24262E",
+      lightblack: "#5A5B72",
       beige: "#EDE0D4",
       grey: "#9A96B0",
       green: "#84F877",
+      lightgreen: "#96F98B",
     },
     fontFamily: {
       heading: ["Libre Baskerville", "serif"],
