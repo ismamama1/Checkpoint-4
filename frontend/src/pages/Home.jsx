@@ -6,23 +6,24 @@ import vinyl from "@assets/Vinyl.png";
 
 function Home() {
   return (
-    <div className="h-max bg-black">
-      <section className="flex flex-col justify-between gap-y-20 md:p-16">
+    <div className="h-full w-full bg-black">
+      <section className="flex flex-col justify-between gap-y-20 md:gap-y-44 md:p-16">
         <img
           src={vinyl}
           alt="vinyl"
-          className="z-0 w-[13rem] absolute inset-y-[12.5rem] left-0 md:inset-y-80 md:left-20 xl:inset-y-80 xl:left-40"
+          className="z-0 w-[13rem] md:w-[19rem] absolute inset-y-[12.5rem] left-0 md:inset-y-72 md:left-5 xl:inset-y-80 xl:left-40"
         />
-        <h1 className="flex z-10 text-left font-heading text-grey text-xl md:text-4xl mt-[8rem] ml-[12.5rem] lg:text-4xl md:mr-[26rem] md:ml-[6rem] lg:mr-[46rem] lg:ml-[16rem] md:pt-16">
+        <h1 className="flex z-10 text-left font-heading text-grey text-xl md:text-4xl mt-[8rem] ml-[12.5rem] md:mt-[8rem] md:mr-[6rem] md:ml-[16rem] xl:mr-[50%] xl:ml-[31%]">
           Let's contribute together and bring alive what is missing with
           streaming platforms.
         </h1>
         <img
           src={cd}
           alt="cd"
-          className="z-0 w-[11rem] absolute inset-y-[32rem] right-0 md:inset-y-[39rem] md:right-20 xl:inset-y-[39rem] xl:right-40"
+          className="z-0 w-[11rem] md:w-[16rem] absolute inset-y-[32rem] right-0 md:inset-y-[44rem] md:right-5 xl:inset-y-[49rem] xl:right-40"
         />
-        <h2 className="flex z-10 text-right font-heading text-grey text-xl md:text-4xl mt-[6rem] mr-[12rem] md:ml-[28rem] md:mr-[6rem] lg:ml-[46rem] lg:mr-[16rem] pb-18 md:pb-16">
+        <h2 className="flex z-10 text-right font-heading text-grey text-xl md:text-4xl mt-[5rem] mr-[11rem] ml-[4rem] md:mt-[2rem] md:mr-[14rem] md:ml-[13rem] xl:ml-[50%] xl:mr-[28%] pb-18 ">
+          {/* md:pb-16  */}
           Get the magic back to what it was.
         </h2>
 
