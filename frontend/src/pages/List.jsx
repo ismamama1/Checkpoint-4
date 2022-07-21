@@ -13,7 +13,7 @@ const options = [
 function List() {
   return (
     <div>
-      <div className="h-70 bg-black flex flex-col items-center md:flex-row justify-center">
+      <div className="h-70 p-5 bg-grey flex flex-col items-center md:flex-row justify-center">
         <Autocomplete
           disablePortal
           id="combo-box-demo-1"
@@ -28,7 +28,12 @@ function List() {
           }}
           // onChange={(e, diplome) => setDiplome(diplome.id)}
           renderInput={(params) => (
-            <TextField {...params} label="Diplôme" color="primary" />
+            <TextField
+              {...params}
+              label="Diplôme"
+              color="primary"
+              variant="standard"
+            />
           )}
         />
         <Autocomplete
@@ -45,7 +50,12 @@ function List() {
           }}
           // onChange={(e, profession) => setProfession(profession.id)}
           renderInput={(params) => (
-            <TextField {...params} label="Profession" color="primary" />
+            <TextField
+              {...params}
+              label="Profession"
+              color="primary"
+              variant="standard"
+            />
           )}
         />
         <Autocomplete
@@ -62,7 +72,12 @@ function List() {
           }}
           // onChange={(e, years) => setYears(years.id)}
           renderInput={(params) => (
-            <TextField {...params} label="Année" color="primary" />
+            <TextField
+              {...params}
+              label="Année"
+              color="primary"
+              variant="standard"
+            />
           )}
         />
       </div>
