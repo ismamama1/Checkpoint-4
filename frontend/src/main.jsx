@@ -17,6 +17,9 @@ const theme = createTheme({
       main: "#84F877",
     },
   },
+  typography: {
+    fontFamily: ["Hind", "sans-serif"].join(","),
+  },
 });
 
 root.render(
