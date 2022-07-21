@@ -6,7 +6,7 @@ function Button({ link, content }) {
     <Link to={link}>
       <button
         type="button"
-        className="bg-green text-black font-bold py-2 px-4 rounded-md drop-shadow-md hover:bg-lightgreen active:lightgreen"
+        className="bg-green text-black font-body font-semibold py-2 px-5 rounded-md drop-shadow-md hover:bg-lightgreen active:lightgreen"
       >
         {content}
       </button>
