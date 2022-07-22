@@ -1,7 +1,4 @@
 import React from "react";
-// import { React, useState, useEffect } from "react";
-
-// import axios from "axios";
 
 import {
   TextField,
@@ -21,35 +18,7 @@ const options = [
   { label: "12 Angry Men", year: 1957 },
 ];
 
-// const fetch = {
-//   method: "GET",
-//   url: "https://spotify23.p.rapidapi.com/search/",
-//   params: {
-//     q: "albums",
-//     type: "multi",
-//     offset: "0",
-//     limit: "10",
-//     numberOfTopResults: "5",
-//   },
-//   headers: {
-//     "X-RapidAPI-Key": "a52a1ec984msh8d8606ff1c4b7e6p1dc5cfjsn08643eca9499",
-//     "X-RapidAPI-Host": "spotify23.p.rapidapi.com",
-//   },
-// };
-
 function Filters() {
-  // const [results, setResults] = useState();
-
-  // useEffect(() => {
-  //   axios
-  //     .request(fetch)
-  //     .then((res) => {
-  //       setResults(res.data);
-  //       console.log(res.data);
-  //     })
-  //     .catch((err) => console.error(err));
-  // }, []);
-
   return (
     <div className="h-70 p-5 bg-grey">
       <div className="flex flex-col md:flex-row gap-x-3 items-center md:flex-row justify-center">
@@ -77,6 +46,7 @@ function Filters() {
             width: 300,
             mb: 1,
             "@media screen and (min-width: 48em)": {
+              width: 200,
               mr: 1,
             },
           }}
@@ -90,50 +60,36 @@ function Filters() {
             />
           )}
         />
-        <Autocomplete
-          disablePortal
-          id="combo-box-demo-2"
-          options={options}
-          // getOptionLabel={(option) => option.job.replace("&apos;E", "'É")}
-          sx={{
-            width: 300,
-            mb: 1,
-            "@media screen and (min-width: 48em)": {
-              mr: 1,
-            },
-          }}
-          // onChange={(e, profession) => setProfession(profession.id)}
-          renderInput={(params) => (
-            <TextField
-              {...params}
-              label="Artist"
-              color="primary"
-              variant="standard"
-            />
-          )}
-        />
-        <Autocomplete
-          disablePortal
-          id="combo-box-demo-3"
-          options={options}
-          // getOptionLabel={(option) => option.year}
-          sx={{
-            width: 300,
-            mb: 1,
-            "@media screen and (min-width: 48em)": {
-              mr: 1,
-            },
-          }}
-          // onChange={(e, years) => setYears(years.id)}
-          renderInput={(params) => (
-            <TextField
-              {...params}
-              label="Year"
-              color="primary"
-              variant="standard"
-            />
-          )}
-        />
+        <div className="flex justify-center m-2">
+          <TextField
+            id="artist"
+            label="Search by artist"
+            variant="standard"
+            sx={{
+              width: 300,
+              mb: 1,
+              "@media screen and (min-width: 48em)": {
+                width: 200,
+              },
+            }}
+            // onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
+        <div className="flex justify-center m-2">
+          <TextField
+            id="artist"
+            label="Search by year"
+            variant="standard"
+            sx={{
+              width: 300,
+              mb: 1,
+              "@media screen and (min-width: 48em)": {
+                width: 200,
+              },
+            }}
+            // onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
       </div>
     </div>
   );
