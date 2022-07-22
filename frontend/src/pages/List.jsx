@@ -12,18 +12,20 @@ function List() {
     axios({
       method: "get",
       url: "http://hp-api.herokuapp.com/api/characters",
-    }).then((response) => {
-      setCharacters(response.data.slice(1, 20));
+    }).then((res) => {
+      setCharacters(res.data.slice(1, 20));
       setLoading(false);
     });
   }, []);
 
   return (
     <>
-      {loading && <h1>Loading ...</h1>}
+      {loading && (
+        <h1 className="text-center text-4xl text-heading">Loading ...</h1>
+      )}
       {!loading && (
         <div>
-          <Filters />
+          <Filters setCharacters={setCharacters} />
           {characters.map((character) => (
             <ListCards
               image={character.image}

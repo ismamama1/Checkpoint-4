@@ -3,7 +3,7 @@ import React from "react";
 function ListCards({ image, name, house }) {
   return (
     <div className="flex flex-row h-screen w-screen justify-between bg-black">
-      <div className="w-[45%] h-[40%] md:w-[22%] lg:w-[18%] lg:h-[40%] xl:w-[15%] bg-beige rounded overflow-hidden shadow-lg m-8 p-2 text center">
+      <div className="w-[45%] h-[40%] md:w-[22%] lg:w-[18%] lg:h-[40%] xl:w-[15%] lg:h-[60%] bg-beige rounded overflow-hidden shadow-lg m-8 p-2 text center">
         <img className="w-[30%]" src={image} alt={name} loading="lazy" />
         <div className="bg-grey rounded shadow-lg px-6 py-4">
           <div className="text-black font-heading font-semibold text-xl mb-2">
