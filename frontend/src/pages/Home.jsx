@@ -23,7 +23,6 @@ function Home() {
           className="z-0 w-[11rem] md:w-[16rem] absolute inset-y-[32rem] right-0 md:inset-y-[44rem] md:right-5 xl:inset-y-[49rem] xl:right-40"
         />
         <h2 className="flex z-10 text-right font-heading text-grey text-xl md:text-4xl mt-[5rem] mr-[11rem] ml-[4rem] md:mt-[2rem] md:mr-[14rem] md:ml-[13rem] xl:ml-[50%] xl:mr-[28%] pb-18 ">
-          {/* md:pb-16  */}
           Get the magic back to what it was.
         </h2>
 
