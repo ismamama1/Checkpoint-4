@@ -1,6 +1,6 @@
 import React from "react";
+// import { React, useState, useEffect } from "react";
 
-// import { useState, useEffect } from "react";
 // import axios from "axios";
 
 import {
@@ -21,43 +21,35 @@ const options = [
   { label: "12 Angry Men", year: 1957 },
 ];
 
-function Filters() {
-  // const [results, setResults] = useState([]);
+// const fetch = {
+//   method: "GET",
+//   url: "https://spotify23.p.rapidapi.com/search/",
+//   params: {
+//     q: "albums",
+//     type: "multi",
+//     offset: "0",
+//     limit: "10",
+//     numberOfTopResults: "5",
+//   },
+//   headers: {
+//     "X-RapidAPI-Key": "a52a1ec984msh8d8606ff1c4b7e6p1dc5cfjsn08643eca9499",
+//     "X-RapidAPI-Host": "spotify23.p.rapidapi.com",
+//   },
+// };
 
-  // const fetch = {
-  //   method: "GET",
-  //   url: "https://spotify23.p.rapidapi.com/search/",
-  //   params: {
-  //     q: "albums",
-  //     type: "multi",
-  //     offset: "0",
-  //     limit: "10",
-  //     numberOfTopResults: "5",
-  //   },
-  //   headers: {
-  //     "X-RapidAPI-Key": "a52a1ec984msh8d8606ff1c4b7e6p1dc5cfjsn08643eca9499",
-  //     "X-RapidAPI-Host": "spotify23.p.rapidapi.com",
-  //   },
-  // };
+function Filters() {
+  // const [results, setResults] = useState();
 
   // useEffect(() => {
   //   axios
   //     .request(fetch)
   //     .then((res) => {
-  //       console.log(res.data);
   //       setResults(res.data);
+  //       console.log(res.data);
   //     })
   //     .catch((err) => console.error(err));
   // }, []);
 
-  // useEffect(() => {
-  //   axios
-  //     .get(fetch)
-  //     .then((res) => {
-  //       setResults(res.data);
-  //     })
-  //     .catch((err) => console.error(err));
-  // }, []);
   return (
     <div className="h-70 p-5 bg-grey">
       <div className="flex flex-col md:flex-row gap-x-3 items-center md:flex-row justify-center">
