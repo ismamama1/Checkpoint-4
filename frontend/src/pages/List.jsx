@@ -19,23 +19,27 @@ function List() {
   }, []);
 
   return (
-    <>
+    <div className="h-full w-full bg-black">
+      <Filters setCharacters={setCharacters} />
       {loading && (
-        <h1 className="text-center text-4xl text-heading">Loading ...</h1>
+        <h1 className="h-full w-full text-center text-4xl text-heading">
+          Loading ...
+        </h1>
       )}
       {!loading && (
         <div>
-          <Filters setCharacters={setCharacters} />
-          {characters.map((character) => (
-            <ListCards
-              image={character.image}
-              name={character.name}
-              house={character.house}
-            />
-          ))}
+          <div className="flex flex-wrap justify-center p-2 md:px-[1rem] lg:px-[1.5rem] xl:px-[7rem]">
+            {characters.map((character) => (
+              <ListCards
+                image={character.image}
+                name={character.name}
+                house={character.house}
+              />
+            ))}
+          </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
 
