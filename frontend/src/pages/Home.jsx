@@ -26,7 +26,7 @@ function Home() {
           Get the magic back to what it was.
         </h2>
 
-        <div className="flex justify-center mb-20 mt-20 md:mb-20">
+        <div className="flex justify-center mb-20 mt-20 sm:mb-20">
           <Button content="Discover" link="/list" />
         </div>
       </section>

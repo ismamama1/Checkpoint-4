@@ -30,13 +30,11 @@ function ListCards({ image, name, house }) {
         <div className="text-black font-heading text-lg mb-2 ">
           Artist: {name}
         </div>
-        <p className="text-black text-body">Genre: {house}</p>
+        <p className="text-black text-body">Genre:{house}</p>
         <p className="text-black text-body">Year</p>
-        {/* <div className="px-6 pt-4 pb-2"> */}
-        <span className="inline-block bg-beige rounded shadow px-3 py-1 text-sm font-semibold text-body text-black mr-2 mb-2 mt-2">
+        <span className="inline-block bg-beige rounded shadow px-3 py-1 text-sm font-semibold text-body text-black mr-2 mb-2 mt-4">
           Media
         </span>
-        {/* </div> */}
       </div>
     </div>
   );
