@@ -22,7 +22,7 @@ function List() {
     <div className="h-full w-full bg-black">
       <Filters setCharacters={setCharacters} />
       {loading && (
-        <h1 className="h-full w-full text-center text-4xl text-heading">
+        <h1 className="h-[50rem] text-center text-6xl text-heading">
           Loading ...
         </h1>
       )}
