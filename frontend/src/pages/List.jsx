@@ -28,12 +28,14 @@ function List() {
       )}
       {!loading && (
         <div>
-          <div className="flex flex-wrap justify-center p-2 md:px-[1rem] lg:px-[1.5rem] xl:px-[7rem]">
+          <div className="flex flex-wrap justify-center p-2">
             {characters.map((character) => (
               <ListCards
                 image={character.image}
                 name={character.name}
                 house={character.house}
+                species={character.species}
+                year={character.yearOfBirth}
               />
             ))}
           </div>
