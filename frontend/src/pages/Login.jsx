@@ -28,6 +28,7 @@ function Login() {
             // {...field}
             label="Password"
             size="medium"
+            type="password"
             variant="standard"
             sx={{
               width: 250,
