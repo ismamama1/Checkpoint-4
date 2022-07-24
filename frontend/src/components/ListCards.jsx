@@ -23,7 +23,7 @@ function ListCards({ image, name, house, species, yearOfBirth }) {
         alt={name}
         loading="lazy"
       />
-      <div className="bg-grey bb-52 rounded shadow-lg px-6 py-4 mx-2">
+      <div className="bg-grey rounded shadow-lg px-6 py-4 mx-2">
         <div className="text-black font-heading font-semibold text-xl mb-2">
           Title
         </div>
