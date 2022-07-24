@@ -1,25 +1,16 @@
 import React from "react";
 
 import MiniLogo from "@assets/MiniLogo.png";
+import Upload from "@assets/Upload.png";
 import Button from "@components/Button";
 
-function ListItem({ name, house, species, yearOfBirth }) {
-  // const { id } = useParams();
-
-  // useEffect(() => {
-  //   axios
-  //   ({
-  //     method: "get",
-  //     url: {`http://hp-api.herokuapp.com/api/characters/${id}`},
-  //   })
-  //     .then((res) => setCharacters(res.data.slice(1, 20)))
-  //     .catch((err) => console.error(err));
-  // }, [id]);
-
+function Contribution({ name, house, species, yearOfBirth }) {
   return (
     <div className="flex flex-col items-center h-full w-full bg-black">
+      <h1 className="text-grey text-4xl font-heading mt-14">Contribute</h1>
       {/* Background Card */}
       <div className="flex flex-col h-[90%] w-[80%] md:w-[22%] lg:w-[18%] xl:w-[40%] rounded-md shadow-lg bg-beige m-6 xl:m-12">
+        {/* First Card */}
         <div className="flex flex-col md:flex-row bg-grey rounded shadow-lg px-6 py-4 m-4">
           <img
             className=" h-40 w-sm object-cover pb-4"
@@ -44,25 +35,27 @@ function ListItem({ name, house, species, yearOfBirth }) {
           </div>
         </div>
         {/* Second Card */}
-        <div className="flex flex-col bg-black rounded shadow-lg px-6 py-4 m-4 ">
+        <div className="flex flex-col bg-black rounded shadow-lg px-6 py-4 m-4">
           <div className="flex justify-center text-grey font-heading text-xl mb-2">
-            Uploaded photos
+            Upload your photos
           </div>
           <div className="flex justify-center text-grey font-heading text-xl mb-2">
-            <img
-              className="h-20 w-sm object-cover pb-4"
-              src={MiniLogo}
-              alt={name}
-              loading="lazy"
-            />
+            <button type="button">
+              <img
+                className="h-20 w-sm object-cover pb-4 pt-4 "
+                src={Upload}
+                alt={name}
+                loading="lazy"
+              />
+            </button>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center mb-20 mt-20 md:mb-20">
-        <Button content="Back to list" link="/list" />
+        <div className="flex justify-end mt-7 mr-14 mb-7">
+          <Button content="Submit" link="" />
+        </div>
       </div>
     </div>
   );
 }
 
-export default ListItem;
+export default Contribution;
