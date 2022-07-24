@@ -5,7 +5,7 @@ import Home from "@pages/Home";
 import List from "@pages/List";
 import Register from "@pages/Register";
 import Login from "@pages/Login";
-import Contribution from "@pages/Contribution";
+import ListItem from "@pages/ListItem";
 import Navbar from "@components/Navbar";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/list" element={<List />} />
-        <Route path="/list/:contribution-id" element={<Contribution />} />
+        <Route path="/list/:contribution-id" element={<ListItem />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>

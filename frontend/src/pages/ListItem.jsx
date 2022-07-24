@@ -3,7 +3,7 @@ import React from "react";
 import MiniLogo from "@assets/MiniLogo.png";
 import Button from "@components/Button";
 
-function Contribution({ name, house, species, yearOfBirth }) {
+function ListItem({ name, house, species, yearOfBirth }) {
   // const { id } = useParams();
 
   // useEffect(() => {
@@ -66,4 +66,4 @@ function Contribution({ name, house, species, yearOfBirth }) {
   );
 }
 
-export default Contribution;
+export default ListItem;
