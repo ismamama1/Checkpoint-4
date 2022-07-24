@@ -9,7 +9,6 @@ function Register() {
       <h1 className="text-grey text-4xl font-heading mt-8 md:mt-14 p-5">
         Create your profile
       </h1>
-      {/* Background Card */}
       <div className="flex flex-col h-[90%] w-[80%] md:w-[22%] lg:w-[18%] xl:w-[40%] rounded-md shadow-lg bg-beige m-6 xl:m-12">
         <div className="flex flex-col items-center gap-y-4 p-8 mt-8">
           <TextField
